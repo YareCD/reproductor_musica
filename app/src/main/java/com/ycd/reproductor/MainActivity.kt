@@ -36,11 +36,11 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            // El tema (claro u oscuro) sale de la base de datos: campo tema_oscuro
+
             val temaViewModel: TemaViewModel = hiltViewModel()
             val temaOscuro by temaViewModel.temaOscuro.collectAsState()
 
-            // Iconos de la barra de estado claros u oscuros según el tema
+
             DisposableEffect(temaOscuro) {
                 this@MainActivity.enableEdgeToEdge(
                     statusBarStyle = SystemBarStyle.auto(Color.TRANSPARENT, Color.TRANSPARENT) { temaOscuro },
@@ -71,7 +71,7 @@ fun AppReproductor() {
             )
         }
     ) { innerPadding ->
-        // El Scaffold ya incluye el espacio de la barra de estado en innerPadding
+
         val modifier = Modifier.padding(innerPadding)
 
         when (destino) {
