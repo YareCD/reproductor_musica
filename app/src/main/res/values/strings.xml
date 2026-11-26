@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">Reproductor</string>
+
+    <!-- Navegación -->
+    <string name="nav_biblioteca">Biblioteca</string>
+    <string name="nav_reproductor">Reproductor</string>
+    <string name="nav_metronomo">Metrónomo</string>
+    <string name="nav_perfil">Perfil</string>
+
+    <!-- Pantalla 1: Biblioteca -->
+    <string name="biblioteca_titulo">Mi biblioteca</string>
+    <string name="biblioteca_crear_playlist">Crear playlist</string>
+    <string name="biblioteca_buscar_hint">Buscar canciones</string>
+    <string name="biblioteca_menu">Menú</string>
+    <string name="biblioteca_buscar">Buscar</string>
+    <string name="playlists_titulo">Playlists</string>
+    <string name="playlists_ver_todas">Ver todas</string>
+    <string name="playlist_favoritas">Favoritas</string>
+    <string name="playlist_estudiar">Para estudiar</string>
+    <string name="playlist_entrenar">Entrenar</string>
+    <string name="canciones_titulo">Todas las canciones</string>
+    <string name="canciones_total">%1$d canciones</string>
+
+    <!-- Canciones de ejemplo -->
+    <string name="cancion_1_titulo">Noches de neón</string>
+    <string name="cancion_1_artista">Artista de ejemplo</string>
+    <string name="cancion_2_titulo">Camino a casa</string>
+    <string name="cancion_2_artista">Artista 2</string>
+    <string name="cancion_3_titulo">Luz de verano</string>
+    <string name="cancion_3_artista">Artista 3</string>
+    <string name="cancion_4_titulo">Mañana en calma</string>
+    <string name="cancion_4_artista">Artista 4</string>
+    <string name="duracion_formato">%1$d:%2$02d</string>
+
+    <!-- Pantalla 2: Reproductor -->
+    <string name="reproductor_titulo">Reproduciendo</string>
+    <string name="reproductor_opciones">Más opciones</string>
+    <string name="reproductor_progreso">Progreso de la canción</string>
+    <string name="control_aleatorio">Modo aleatorio</string>
+    <string name="control_anterior">Canción anterior</string>
+    <string name="control_siguiente">Canción siguiente</string>
+    <string name="control_reproducir">Reproducir</string>
+    <string name="control_pausar">Pausar</string>
+    <string name="control_repetir">Repetir</string>
+    <string name="reproductor_ver_letra">Ver letra</string>
+
+    <!-- Pantalla 4: Metrónomo -->
+    <string name="metronomo_titulo">Metrónomo</string>
+    <string name="metronomo_bpm">BPM</string>
+    <string name="metronomo_compas">Compás</string>
+    <string name="metronomo_bajar">Bajar un BPM</string>
+    <string name="metronomo_subir">Subir un BPM</string>
+    <string name="metronomo_iniciar">Iniciar metrónomo</string>
+    <string name="metronomo_detener">Detener metrónomo</string>
+    <string name="metronomo_detenido">Listo para empezar</string>
+    <string name="metronomo_tiempo_acento">Tiempo 1 (acento) activo</string>
+    <string name="metronomo_tiempo">Tiempo %1$d activo</string>
+    <string name="metronomo_sin_perfil">Crea tu perfil en la pestaña Perfil para guardar la configuración del metrónomo</string>
+
+    <!-- Pantalla 5: Perfil y configuración -->
+    <string name="perfil_titulo">Perfil y configuración</string>
+    <string name="perfil_avatar">Foto de perfil</string>
+    <string name="perfil_cambiar_foto">Cambiar foto</string>
+    <string name="perfil_nombre_vacio">Sin nombre</string>
+    <string name="perfil_nombre_etiqueta">Nombre</string>
+    <string name="perfil_correo_etiqueta">Correo electrónico</string>
+    <string name="perfil_correo_vacio">Sin correo</string>
+    <string name="perfil_correo_invalido">Escribe un correo válido</string>
+    <string name="perfil_editar">Editar perfil</string>
+    <string name="perfil_guardar">Guardar</string>
+    <string name="perfil_cancelar">Cancelar</string>
+    <string name="perfil_crear">Crear perfil</string>
+    <string name="perfil_sin_perfil">Todavía no tienes un perfil. Crea uno para guardar tu información y tu configuración.</string>
+    <string name="perfil_eliminar">Eliminar perfil</string>
+    <string name="perfil_eliminar_titulo">¿Eliminar perfil?</string>
+    <string name="perfil_eliminar_mensaje">Se borrarán tu nombre, correo, foto y configuración. Esta acción no se puede deshacer.</string>
+    <string name="config_titulo">Configuración</string>
+    <string name="config_tema_oscuro">Tema oscuro</string>
+    <string name="config_letra_automatica">Mostrar letra automáticamente</string>
+    <string name="config_sonido">Sonido del metrónomo</string>
+    <string name="sonido_clic">Clic</string>
+    <string name="sonido_digital">Digital</string>
+    <string name="sonido_suave">Suave</string>
+
+    <string name="proximamente">proximamente...</string>
+</resources>
