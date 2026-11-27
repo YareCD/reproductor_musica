@@ -3,7 +3,9 @@ package com.ycd.reproductor.data.di
 import android.content.Context
 import androidx.room.Room
 import com.ycd.reproductor.data.database.AppDatabase
+import com.ycd.reproductor.data.database.dao.CancionDao
 import com.ycd.reproductor.data.database.dao.ConfiguracionDao
+import com.ycd.reproductor.data.database.dao.PlaylistDao
 import com.ycd.reproductor.data.database.dao.UsuarioDao
 import dagger.Module
 import dagger.Provides
@@ -33,4 +35,10 @@ object DataBaseModule {
     @Provides
     fun provideConfiguracionDao(database: AppDatabase): ConfiguracionDao =
         database.configuracionDao()
+
+    @Provides
+    fun providePlaylistDao(database: AppDatabase): PlaylistDao = database.playlistDao()
+
+    @Provides
+    fun provideCancionDao(database: AppDatabase): CancionDao = database.cancionDao()
 }

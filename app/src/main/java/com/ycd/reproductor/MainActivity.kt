@@ -14,7 +14,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
@@ -27,7 +26,6 @@ import com.ycd.reproductor.ui.MetronomoScreen
 import com.ycd.reproductor.ui.PerfilScreen
 import com.ycd.reproductor.ui.ReproductorScreen
 import com.ycd.reproductor.ui.TemaViewModel
-import com.ycd.reproductor.ui.cancionesEjemplo
 import com.ycd.reproductor.ui.theme.ReproductorTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -39,7 +37,6 @@ class MainActivity : ComponentActivity() {
 
             val temaViewModel: TemaViewModel = hiltViewModel()
             val temaOscuro by temaViewModel.temaOscuro.collectAsState()
-
 
             DisposableEffect(temaOscuro) {
                 this@MainActivity.enableEdgeToEdge(
@@ -59,7 +56,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun AppReproductor() {
     var destino by rememberSaveable { mutableStateOf(Destino.Biblioteca) }
-    var indiceCancion by rememberSaveable { mutableIntStateOf(0) }
 
     Scaffold(
         modifier = Modifier.fillMaxSize(),
@@ -76,17 +72,11 @@ fun AppReproductor() {
 
         when (destino) {
             Destino.Biblioteca -> BibliotecaScreen(
-                onCancionClick = { indice ->
-                    indiceCancion = indice
-                    destino = Destino.Reproductor
-                },
+                onCancionClick = { destino = Destino.Reproductor },
                 modifier = modifier
             )
 
-            Destino.Reproductor -> ReproductorScreen(
-                cancion = cancionesEjemplo[indiceCancion],
-                modifier = modifier
-            )
+            Destino.Reproductor -> ReproductorScreen(modifier = modifier)
 
             Destino.Metronomo -> MetronomoScreen(modifier = modifier)
 

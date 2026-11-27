@@ -15,22 +15,32 @@
     <string name="biblioteca_buscar">Buscar</string>
     <string name="playlists_titulo">Playlists</string>
     <string name="playlists_ver_todas">Ver todas</string>
-    <string name="playlist_favoritas">Favoritas</string>
-    <string name="playlist_estudiar">Para estudiar</string>
-    <string name="playlist_entrenar">Entrenar</string>
     <string name="canciones_titulo">Todas las canciones</string>
     <string name="canciones_total">%1$d canciones</string>
-
-    <!-- Canciones de ejemplo -->
-    <string name="cancion_1_titulo">Noches de neón</string>
-    <string name="cancion_1_artista">Artista de ejemplo</string>
-    <string name="cancion_2_titulo">Camino a casa</string>
-    <string name="cancion_2_artista">Artista 2</string>
-    <string name="cancion_3_titulo">Luz de verano</string>
-    <string name="cancion_3_artista">Artista 3</string>
-    <string name="cancion_4_titulo">Mañana en calma</string>
-    <string name="cancion_4_artista">Artista 4</string>
     <string name="duracion_formato">%1$d:%2$02d</string>
+
+    <!-- Biblioteca: audio del teléfono, YouTube Music y playlists -->
+    <string name="biblioteca_importar">Importar música</string>
+    <string name="biblioteca_youtube_music">YouTube Music</string>
+    <string name="biblioteca_permiso_denegado">Sin permiso para leer tu música no puedo importarla. Puedes activarlo en los ajustes de la app.</string>
+    <string name="biblioteca_vacia">Todavía no hay canciones. Toca Importar música para traer las del teléfono.</string>
+    <plurals name="biblioteca_importadas">
+        <item quantity="one">Se importó %1$d canción nueva</item>
+        <item quantity="other">Se importaron %1$d canciones nuevas</item>
+    </plurals>
+    <string name="playlists_vacio">Aún no tienes playlists. Crea una con el botón +</string>
+    <string name="playlist_nueva_titulo">Nueva playlist</string>
+    <string name="playlist_renombrar_titulo">Renombrar playlist</string>
+    <string name="playlist_nombre_etiqueta">Nombre de la playlist</string>
+    <string name="playlist_nombre_invalido">Escribe un nombre de máximo 40 caracteres</string>
+    <string name="playlist_eliminar_titulo">¿Eliminar playlist?</string>
+    <string name="playlist_eliminar_mensaje">Se eliminará la playlist %1$s. Sus canciones se quedan en tu biblioteca.</string>
+    <string name="accion_renombrar">Renombrar</string>
+    <string name="accion_eliminar">Eliminar</string>
+    <string name="cancion_opciones">Opciones de la canción</string>
+    <string name="cancion_agregar_a">Agregar a %1$s</string>
+    <string name="cancion_quitar_de_playlist">Quitar de la playlist</string>
+    <string name="cancion_quitar_biblioteca">Quitar de la biblioteca</string>
 
     <!-- Pantalla 2: Reproductor -->
     <string name="reproductor_titulo">Reproduciendo</string>
@@ -43,6 +53,10 @@
     <string name="control_pausar">Pausar</string>
     <string name="control_repetir">Repetir</string>
     <string name="reproductor_ver_letra">Ver letra</string>
+    <string name="reproductor_vacio">Elige una canción de tu biblioteca</string>
+    <string name="reproductor_error">No se pudo reproducir esta canción</string>
+    <string name="reproductor_youtube_music">Buscar en YouTube Music</string>
+    <string name="youtube_no_disponible">No se pudo abrir YouTube Music</string>
 
     <!-- Pantalla 4: Metrónomo -->
     <string name="metronomo_titulo">Metrónomo</string>
